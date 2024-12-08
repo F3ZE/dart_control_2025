@@ -15,7 +15,7 @@
   @endverbatim
   *******************************************************
   */
-#include "remote.h"
+#include "../Inc/remote.h"
 // 遥控器数据上限，大于整个值说明出了问题
 #define RC_CHANNAL_ERROR_VALUE 700
 

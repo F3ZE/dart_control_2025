@@ -25,10 +25,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "io.h"
-#include "remote.h"
-#include "can_receive.h"
-#include "pid.h"
+#include "../../User/User_Driver/Inc/io.h"
+#include "../../User/User_Driver/Inc/remote.h"
+#include "../../User/User_Driver/Inc/can_receive.h"
+#include "../../User/User_Driver/Inc/pid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -116,6 +116,7 @@ int main(void)
   int16_t target_speed = 0;
   int16_t debug_time = 0;
   CAN1_Init();
+  CAN2_Init();
 
   /* USER CODE END 2 */
 
@@ -123,20 +124,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-      if (debug_time < 1000)
-      {
-          target_speed = 1000;
-      }
-      else if (debug_time >= 1000 && debug_time < 2000)
-      {
-          target_speed = -1000;
-      }
-      else if (debug_time > 2000)
-      {
-          debug_time = 0;
-      }
-      debug_time++;
+    /* USER CODE END WHILE */
       int16_t current_speed = motor_supply.speed_rpm;
    //   float motor_speed = PID_Calculate(&pid_regulator, motor_supply.speed_rpm, target_speed);
       data[0] = motor_supply.speed_rpm;

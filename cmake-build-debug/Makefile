@@ -56,10 +56,10 @@ RM = "G:\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = G:\dev\SRM_L1_can
+CMAKE_SOURCE_DIR = G:\dev\dart_control_2025
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = G:\dev\SRM_L1_can\cmake-build-debug
+CMAKE_BINARY_DIR = G:\dev\dart_control_2025\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start G:\dev\SRM_L1_can\cmake-build-debug\CMakeFiles G:\dev\SRM_L1_can\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\dev\dart_control_2025\cmake-build-debug\CMakeFiles G:\dev\dart_control_2025\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start G:\dev\SRM_L1_can\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\dev\dart_control_2025\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,30 +152,6 @@ Core/Src/can.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/can.c.s
 .PHONY : Core/Src/can.c.s
 
-Core/Src/can_receive.obj: Core/Src/can_receive.c.obj
-.PHONY : Core/Src/can_receive.obj
-
-# target to build an object file
-Core/Src/can_receive.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/can_receive.c.obj
-.PHONY : Core/Src/can_receive.c.obj
-
-Core/Src/can_receive.i: Core/Src/can_receive.c.i
-.PHONY : Core/Src/can_receive.i
-
-# target to preprocess a source file
-Core/Src/can_receive.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/can_receive.c.i
-.PHONY : Core/Src/can_receive.c.i
-
-Core/Src/can_receive.s: Core/Src/can_receive.c.s
-.PHONY : Core/Src/can_receive.s
-
-# target to generate assembly for a file
-Core/Src/can_receive.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/can_receive.c.s
-.PHONY : Core/Src/can_receive.c.s
-
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
 
@@ -224,30 +200,6 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
-Core/Src/io.obj: Core/Src/io.c.obj
-.PHONY : Core/Src/io.obj
-
-# target to build an object file
-Core/Src/io.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/io.c.obj
-.PHONY : Core/Src/io.c.obj
-
-Core/Src/io.i: Core/Src/io.c.i
-.PHONY : Core/Src/io.i
-
-# target to preprocess a source file
-Core/Src/io.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/io.c.i
-.PHONY : Core/Src/io.c.i
-
-Core/Src/io.s: Core/Src/io.c.s
-.PHONY : Core/Src/io.s
-
-# target to generate assembly for a file
-Core/Src/io.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/io.c.s
-.PHONY : Core/Src/io.c.s
-
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -271,54 +223,6 @@ Core/Src/main.s: Core/Src/main.c.s
 Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
-
-Core/Src/pid.obj: Core/Src/pid.c.obj
-.PHONY : Core/Src/pid.obj
-
-# target to build an object file
-Core/Src/pid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/pid.c.obj
-.PHONY : Core/Src/pid.c.obj
-
-Core/Src/pid.i: Core/Src/pid.c.i
-.PHONY : Core/Src/pid.i
-
-# target to preprocess a source file
-Core/Src/pid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/pid.c.i
-.PHONY : Core/Src/pid.c.i
-
-Core/Src/pid.s: Core/Src/pid.c.s
-.PHONY : Core/Src/pid.s
-
-# target to generate assembly for a file
-Core/Src/pid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/pid.c.s
-.PHONY : Core/Src/pid.c.s
-
-Core/Src/remote.obj: Core/Src/remote.c.obj
-.PHONY : Core/Src/remote.obj
-
-# target to build an object file
-Core/Src/remote.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/remote.c.obj
-.PHONY : Core/Src/remote.c.obj
-
-Core/Src/remote.i: Core/Src/remote.c.i
-.PHONY : Core/Src/remote.i
-
-# target to preprocess a source file
-Core/Src/remote.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/remote.c.i
-.PHONY : Core/Src/remote.c.i
-
-Core/Src/remote.s: Core/Src/remote.c.s
-.PHONY : Core/Src/remote.s
-
-# target to generate assembly for a file
-Core/Src/remote.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/remote.c.s
-.PHONY : Core/Src/remote.c.s
 
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
@@ -463,14 +367,6 @@ Core/Src/usart.s: Core/Src/usart.c.s
 Core/Src/usart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Src/usart.c.s
 .PHONY : Core/Src/usart.c.s
-
-Core/Startup/startup_stm32f407ighx.obj: Core/Startup/startup_stm32f407ighx.s.obj
-.PHONY : Core/Startup/startup_stm32f407ighx.obj
-
-# target to build an object file
-Core/Startup/startup_stm32f407ighx.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
-.PHONY : Core/Startup/startup_stm32f407ighx.s.obj
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
@@ -880,6 +776,110 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 
+Startup/startup_stm32f407ighx.obj: Startup/startup_stm32f407ighx.s.obj
+.PHONY : Startup/startup_stm32f407ighx.obj
+
+# target to build an object file
+Startup/startup_stm32f407ighx.s.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/Startup/startup_stm32f407ighx.s.obj
+.PHONY : Startup/startup_stm32f407ighx.s.obj
+
+User/User_Driver/Src/can_receive.obj: User/User_Driver/Src/can_receive.c.obj
+.PHONY : User/User_Driver/Src/can_receive.obj
+
+# target to build an object file
+User/User_Driver/Src/can_receive.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/can_receive.c.obj
+.PHONY : User/User_Driver/Src/can_receive.c.obj
+
+User/User_Driver/Src/can_receive.i: User/User_Driver/Src/can_receive.c.i
+.PHONY : User/User_Driver/Src/can_receive.i
+
+# target to preprocess a source file
+User/User_Driver/Src/can_receive.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/can_receive.c.i
+.PHONY : User/User_Driver/Src/can_receive.c.i
+
+User/User_Driver/Src/can_receive.s: User/User_Driver/Src/can_receive.c.s
+.PHONY : User/User_Driver/Src/can_receive.s
+
+# target to generate assembly for a file
+User/User_Driver/Src/can_receive.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/can_receive.c.s
+.PHONY : User/User_Driver/Src/can_receive.c.s
+
+User/User_Driver/Src/io.obj: User/User_Driver/Src/io.c.obj
+.PHONY : User/User_Driver/Src/io.obj
+
+# target to build an object file
+User/User_Driver/Src/io.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/io.c.obj
+.PHONY : User/User_Driver/Src/io.c.obj
+
+User/User_Driver/Src/io.i: User/User_Driver/Src/io.c.i
+.PHONY : User/User_Driver/Src/io.i
+
+# target to preprocess a source file
+User/User_Driver/Src/io.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/io.c.i
+.PHONY : User/User_Driver/Src/io.c.i
+
+User/User_Driver/Src/io.s: User/User_Driver/Src/io.c.s
+.PHONY : User/User_Driver/Src/io.s
+
+# target to generate assembly for a file
+User/User_Driver/Src/io.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/io.c.s
+.PHONY : User/User_Driver/Src/io.c.s
+
+User/User_Driver/Src/pid.obj: User/User_Driver/Src/pid.c.obj
+.PHONY : User/User_Driver/Src/pid.obj
+
+# target to build an object file
+User/User_Driver/Src/pid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/pid.c.obj
+.PHONY : User/User_Driver/Src/pid.c.obj
+
+User/User_Driver/Src/pid.i: User/User_Driver/Src/pid.c.i
+.PHONY : User/User_Driver/Src/pid.i
+
+# target to preprocess a source file
+User/User_Driver/Src/pid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/pid.c.i
+.PHONY : User/User_Driver/Src/pid.c.i
+
+User/User_Driver/Src/pid.s: User/User_Driver/Src/pid.c.s
+.PHONY : User/User_Driver/Src/pid.s
+
+# target to generate assembly for a file
+User/User_Driver/Src/pid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/pid.c.s
+.PHONY : User/User_Driver/Src/pid.c.s
+
+User/User_Driver/Src/remote.obj: User/User_Driver/Src/remote.c.obj
+.PHONY : User/User_Driver/Src/remote.obj
+
+# target to build an object file
+User/User_Driver/Src/remote.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/remote.c.obj
+.PHONY : User/User_Driver/Src/remote.c.obj
+
+User/User_Driver/Src/remote.i: User/User_Driver/Src/remote.c.i
+.PHONY : User/User_Driver/Src/remote.i
+
+# target to preprocess a source file
+User/User_Driver/Src/remote.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/remote.c.i
+.PHONY : User/User_Driver/Src/remote.c.i
+
+User/User_Driver/Src/remote.s: User/User_Driver/Src/remote.c.s
+.PHONY : User/User_Driver/Src/remote.s
+
+# target to generate assembly for a file
+User/User_Driver/Src/remote.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SRM_L1_can.elf.dir\build.make CMakeFiles/SRM_L1_can.elf.dir/User/User_Driver/Src/remote.c.s
+.PHONY : User/User_Driver/Src/remote.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -892,27 +892,15 @@ help:
 	@echo ... Core/Src/can.obj
 	@echo ... Core/Src/can.i
 	@echo ... Core/Src/can.s
-	@echo ... Core/Src/can_receive.obj
-	@echo ... Core/Src/can_receive.i
-	@echo ... Core/Src/can_receive.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
-	@echo ... Core/Src/io.obj
-	@echo ... Core/Src/io.i
-	@echo ... Core/Src/io.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
-	@echo ... Core/Src/pid.obj
-	@echo ... Core/Src/pid.i
-	@echo ... Core/Src/pid.s
-	@echo ... Core/Src/remote.obj
-	@echo ... Core/Src/remote.i
-	@echo ... Core/Src/remote.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -931,7 +919,6 @@ help:
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
-	@echo ... Core/Startup/startup_stm32f407ighx.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.s
@@ -983,6 +970,19 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s
+	@echo ... Startup/startup_stm32f407ighx.obj
+	@echo ... User/User_Driver/Src/can_receive.obj
+	@echo ... User/User_Driver/Src/can_receive.i
+	@echo ... User/User_Driver/Src/can_receive.s
+	@echo ... User/User_Driver/Src/io.obj
+	@echo ... User/User_Driver/Src/io.i
+	@echo ... User/User_Driver/Src/io.s
+	@echo ... User/User_Driver/Src/pid.obj
+	@echo ... User/User_Driver/Src/pid.i
+	@echo ... User/User_Driver/Src/pid.s
+	@echo ... User/User_Driver/Src/remote.obj
+	@echo ... User/User_Driver/Src/remote.i
+	@echo ... User/User_Driver/Src/remote.s
 .PHONY : help
 
 

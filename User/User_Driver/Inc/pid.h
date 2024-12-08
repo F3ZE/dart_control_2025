@@ -33,4 +33,6 @@ typedef struct
 extern float PID_Calculate(PID_Regulator_t *pid, float fdb, float set);
 extern void PID_Init(PID_Regulator_t *pid, uint8_t mode, float maxout, float max_iout, float kp, float ki, float kd);
 
+int Square_Wave_Emitter()
+
 #endif

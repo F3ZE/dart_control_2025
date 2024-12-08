@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "g:/dev/SRM_L1_can/cmake-build-debug"
+			"value" : "g:/dev/dart_control_2025/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "G:/STM32Cube/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "G:/STM32Cube/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "G:/dev/SRM_L1_can/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "G:/dev/dart_control_2025/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/dev/SRM_L1_can"
+			"value" : "G:/dev/dart_control_2025"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "G:/dev/SRM_L1_can/cmake-build-debug"
+			"value" : "G:/dev/dart_control_2025/cmake-build-debug"
 		},
 		{
 			"name" : "SRM_L1_can_IS_TOP_LEVEL",
@@ -1451,7 +1451,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "G:/dev/SRM_L1_can"
+			"value" : "G:/dev/dart_control_2025"
 		}
 	],
 	"kind" : "cache",

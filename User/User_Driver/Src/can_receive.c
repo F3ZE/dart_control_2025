@@ -1,4 +1,4 @@
-#include "can_receive.h"
+#include "../Inc/can_receive.h"
 #include "string.h"
 
 // 声明电机变量

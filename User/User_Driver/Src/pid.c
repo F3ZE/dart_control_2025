@@ -1,4 +1,4 @@
-#include "pid.h"
+#include "../Inc/pid.h"
 
 #define LimitMax(input, max)   \
     {                          \
@@ -60,4 +60,26 @@ float PID_Calculate(PID_Regulator_t *pid, float fdb, float set)
         LimitMax(pid->out, pid->max_out);
     }
     return pid->out;
+}
+
+int Square_Wave_Emitter()
+{
+    static int debug_time = 0;  // 使用 static 变量保持状态
+    int target_speed = 0;        // 定义 target_speed 变量
+
+    if (debug_time < 1000)
+    {
+        target_speed = 1000;
+    }
+    else if (debug_time >= 1000 && debug_time < 2000)
+    {
+        target_speed = -1000;
+    }
+    else if (debug_time >= 2000)
+    {
+        debug_time = 0; // 重置 debug_time
+    }
+
+    debug_time++;
+    return target_speed; // 返回方波的数值
 }
